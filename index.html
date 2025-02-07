@@ -17,13 +17,13 @@
       }
       /* Carousel yüksekliği ve görseller için ayarlar */
       .carousel-item {
-        height: 100vh; /* Varsayılan yükseklik */
+        height: 95vh; /* Varsayılan yükseklik */
         overflow: hidden;
       }
       .carousel-item img {
         width: 100%;
-        height: 100%;
-        object-fit: cover; /* Görsellerin orantılı olarak sığmasını sağlar */
+        height: 95vh;
+        /* object-fit: cover;*/  /* Görsellerin orantılı olarak sığmasını sağlar */
       }
       @media (max-width: 768px) {
         .carousel-item {
@@ -66,7 +66,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="mt-5">
       <!-- Anasayfa Carousel -->
       <div id="mainpage" class="carousel slide mb-6" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -85,15 +85,13 @@
           <div class="carousel-item">
             <img src="slayt2.jpeg" class="d-block w-100" alt="Uygun Fiyatlar">
             <div class="carousel-caption">
-              <h1>Uygun Fiyat, Kaliteli Hizmet</h1>
-              <p>Eskişehir ve çevre illerde en uygun fiyat garantisi.</p>
+              
             </div>
           </div>
           <div class="carousel-item">
             <img src="slayt3.jpeg" class="d-block w-100" alt="Profesyonel Ekip">
             <div class="carousel-caption text-end">
-              <h1>Profesyonel ve Deneyimli Ekip</h1>
-              <p>Eşyalarınızı güvenle taşıyoruz.</p>
+              
             </div>
           </div>
         </div>
@@ -107,13 +105,46 @@
         </button>
       </div>
 
+<!-- Marketing Kartları -->
+<div class="section">
+  <div class="container">
+    <h2 class="text-center mb-5">Neden Biz?</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">7/24 Hizmet</h5>
+            <p class="card-text">Her zaman yanınızdayız! Acil nakliye ihtiyaçlarınız için 7/24 hizmet veriyoruz.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Uygun Fiyatlar</h5>
+            <p class="card-text">En uygun fiyatlarla, kaliteli ve güvenilir nakliye hizmeti sunuyoruz.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Profesyonel Ekip</h5>
+            <p class="card-text">Deneyimli ve eğitimli ekibimizle eşyalarınızı güvenle taşıyoruz.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
       <!-- Hakkımızda Bölümü -->
       <div id="about" class="section bg-light">
         <div class="container">
           <h2 class="text-center mb-5">Hakkımızda</h2>
           <div class="row">
             <div class="col-md-6 mb-4">
-              <img src="https://picsum.photos/id/240/600/400" class="img-fluid rounded" alt="Hakkımızda">
+              <img src="galeri0.jpeg" style="height: 40vh !important; width: 100%;" class="img-fluid rounded" alt="Hakkımızda">
             </div>
             <div class="col-md-6">
               <p class="lead">
@@ -133,14 +164,18 @@
           <h2 class="text-center mb-5">Galeri</h2>
           <div class="row">
             <div class="col-md-4 mb-4">
-              <img src="https://picsum.photos/id/241/400/300" class="img-fluid rounded" alt="Galeri 1">
+              <img src="galeri1.jpeg" style="height: 40vh !important; width: 100% !important;" class="img-fluid rounded" alt="Galeri 1">
             </div>
             <div class="col-md-4 mb-4">
-              <img src="https://picsum.photos/id/242/400/300" class="img-fluid rounded" alt="Galeri 2">
+              <img src="galeri2.jpeg" style="height: 40vh !important; width: 100% !important;" class="img-fluid rounded" alt="Galeri 2">
             </div>
             <div class="col-md-4 mb-4">
-              <img src="https://picsum.photos/id/243/400/300" class="img-fluid rounded" alt="Galeri 3">
+              <img src="galeri3.jpeg" style="height: 40vh !important; width: 100% !important;" class="img-fluid rounded" alt="Galeri 3">
             </div>
+            <div class="col-md-4 mb-4">
+              <img src="galeri4.jpeg" style="height: 40vh !important; width: 100% !important;" class="img-fluid rounded" alt="Galeri 3">
+            </div>
+
           </div>
         </div>
       </div>
@@ -150,73 +185,25 @@
         <div class="container">
           <h2 class="text-center mb-5">İletişim</h2>
           <div class="row">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-12 mb-4">
               <p class="lead">
                 Bize ulaşmak için aşağıdaki iletişim bilgilerini kullanabilir veya iletişim formunu doldurabilirsiniz.
               </p>
               <ul class="list-unstyled">
                 <li><strong>Adres:</strong> Eskişehir, Türkiye</li>
-                <li><strong>Telefon:</strong> +90 555 123 45 67</li>
-                <li><strong>E-posta:</strong> info@eskisehirnakliye.com</li>
+                <li><strong>Telefon:</strong> +90 541 179 4336</li>
+                <li><strong>WhatsApp:</strong> +90 541 179 4336</li>
               </ul>
-            </div>
-            <div class="col-md-6">
-              <form>
-                <div class="mb-3">
-                  <label for="name" class="form-label">Adınız</label>
-                  <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">E-posta</label>
-                  <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label">Mesajınız</label>
-                  <textarea class="form-control" id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Gönder</button>
-              </form>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Marketing Kartları -->
-      <div class="section">
-        <div class="container">
-          <h2 class="text-center mb-5">Neden Biz?</h2>
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 text-center">
-                <div class="card-body">
-                  <h5 class="card-title">7/24 Hizmet</h5>
-                  <p class="card-text">Her zaman yanınızdayız! Acil nakliye ihtiyaçlarınız için 7/24 hizmet veriyoruz.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 text-center">
-                <div class="card-body">
-                  <h5 class="card-title">Uygun Fiyatlar</h5>
-                  <p class="card-text">En uygun fiyatlarla, kaliteli ve güvenilir nakliye hizmeti sunuyoruz.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 text-center">
-                <div class="card-body">
-                  <h5 class="card-title">Profesyonel Ekip</h5>
-                  <p class="card-text">Deneyimli ve eğitimli ekibimizle eşyalarınızı güvenle taşıyoruz.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </main>
 
     <footer class="bg-dark text-white text-center py-4">
-      <p class="mb-0">&copy; 2023 Eskişehir Merkez Nakliye. Tüm hakları saklıdır.</p>
+      <p class="mb-0">&copy; 2025 Eskişehir Merkez Nakliye. <br>Tüm hakları saklıdır.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
